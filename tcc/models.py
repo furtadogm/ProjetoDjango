@@ -13,7 +13,7 @@ class Autor(models.Model):
 class Orientador(models.Model):
     nome = models.CharField(max_length=150)
     sobrenome = models.CharField(max_length=150)
-    linkcurriculo = models.CharField(max_length=50)
+    linkcurriculo = models.URLField(verbose_name= "Link do curriculo")
 
     def __str__(self):
         return self.nome
